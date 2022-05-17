@@ -1,10 +1,22 @@
 package com.snakeladder;
 
-public class SnakeAndLadder {
+public class SnakeAndLadder
+{
+    public static void main(String[] args) {
+        int option = (int) (Math.random() * 4);
 
-    public static void main(String[] args)
-    {
-        int diceCheck = 1+ (int) (Math.random() * 6);
-        System.out.println("Number on dice is " + diceCheck);
+        switch (option)
+
+        {
+            case 1:
+                System.out.println("No play: Player in same position");
+                break;
+            case 2:
+                System.out.println("Ladder: Player moves ahead");
+                break;
+            case 3:
+                System.out.println("Snake: Player moves behind");
+        }
+
     }
 }
